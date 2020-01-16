@@ -4,10 +4,27 @@ void main(){
   
   runApp(MaterialApp(
     title: 'Frases do dia',
-    home: Row(children: <Widget>[
-      Text("T1:"),
-      Text("T2:"),
-      Text("T3:")
-    ],)
+    home: Container(
+      color: Colors.white,
+      child: Column(
+        children: <Widget>[
+          Text(
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            style: TextStyle(
+              fontSize: 35,
+              color: Colors.black,
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.normal,
+              letterSpacing: 2,
+              wordSpacing: 5,
+              decoration: TextDecoration.underline,
+              decorationStyle: TextDecorationStyle.solid,
+              decorationColor: Colors.blue
+            ),
+          ),
+        ],
+      ),
+    ),
   ));
+
 }
