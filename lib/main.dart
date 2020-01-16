@@ -4,6 +4,10 @@ void main(){
   
   runApp(MaterialApp(
     title: 'Frases do dia',
-    home: Container(color: Colors.indigo,)
+    home: Row(children: <Widget>[
+      Text("T1:"),
+      Text("T2:"),
+      Text("T3:")
+    ],)
   ));
 }
