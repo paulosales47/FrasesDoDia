@@ -8,20 +8,18 @@ void main(){
       color: Colors.white,
       child: Column(
         children: <Widget>[
-          Text(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.black,
-              fontStyle: FontStyle.normal,
-              fontWeight: FontWeight.normal,
-              letterSpacing: 2,
-              wordSpacing: 5,
-              decoration: TextDecoration.underline,
-              decorationStyle: TextDecorationStyle.solid,
-              decorationColor: Colors.blue
-            ),
-          ),
+          FlatButton(
+            onPressed: (){
+              print("Botão pressionado");
+            },
+            child: Text(
+                "Clique aqui",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+                decoration: TextDecoration.none
+              ),),
+          )
         ],
       ),
     ),
