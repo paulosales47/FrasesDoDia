@@ -6,18 +6,16 @@ void main(){
     debugShowCheckedModeBanner: false,
     title: 'Frases do dia',
     home: Container(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-      margin: EdgeInsets.only(top: 20),
+      margin: EdgeInsets.only(top: 40),
       decoration: BoxDecoration(
         border: Border.all(width: 5, color: Colors.white)
       ),
-      child: Column(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text("T1"),
-          Padding(
-            padding: EdgeInsets.only(top: 50),
-            child: Text("T2"),
-          ),
+          Text("T2"),
           Text("T3"),
         ],
       ),
