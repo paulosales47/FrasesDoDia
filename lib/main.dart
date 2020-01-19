@@ -5,14 +5,26 @@ void main(){
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'Frases do dia',
-    home: Container(
-      margin: EdgeInsets.only(top: 40),
-      decoration: BoxDecoration(
-        border: Border.all(width: 5, color: Colors.white)
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Instagram"),
+        backgroundColor: Colors.blue,
       ),
-      child: Image.asset(
-          "images/1.jpg",
-        fit: BoxFit.scaleDown,
+      body: Padding(
+        padding: EdgeInsets.all(16),
+        child: Text("Conteúdo principal"),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.lightBlue,
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Row(
+            children: <Widget>[
+              Text("Texto 1"),
+              Text("Texto 2")
+            ],
+          ),
+        ),
       ),
     ),
   ));
